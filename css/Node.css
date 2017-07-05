@@ -48,9 +48,21 @@ main,main .row{
     font-size: 16px;
 }
 .left ul li{
+    position: relative;
     width:90%;
     margin:10px auto 0;
     border-bottom: 1px solid #eee;
+}
+.left ul li span{
+    display:none;
+}
+.left ul li:hover span{
+    display:block;
+    position: absolute;
+    right:0;
+    top:5px;
+    color:#ccc;
+    font-size: 12px;
 }
 .left ul li input{
     width:90%;

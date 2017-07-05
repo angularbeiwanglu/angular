@@ -28,5 +28,9 @@ angular.module("myapp",[])
             }
             return id;
         }
+        $scope.del=function () {
+            $scope.data.splice(this.item,1);
+            localStorage.message=JSON.stringify($scope.data);
+        }
     }])
 
